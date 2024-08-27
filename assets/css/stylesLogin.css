@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #55679C, #1E2A5E);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%; /* Garante que o contêiner ocupe toda a largura */
+}
+
+.locker-wrapper {
+    display: flex;
+    justify-content: space-around; /* Distribui o espaço igualmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    padding: 0 2rem; /* Adiciona espaço nas laterais */
+    box-sizing: border-box; /* Inclui padding no cálculo de largura */
+}
+
+.locker {
+    background-color: white;
+    color: #1E2A5E;
+    width: 30%; /* Largura ajustada para caber em uma linha */
+    height: 30%; /* Altura ajustada proporcionalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative; /* Necessário para o alinhamento absoluto do texto */
+}
+
+.locker span {
+    display: block;
+    text-align: center;
+    padding: 0 1rem; /* Adiciona algum espaço ao redor do texto */
+}
+
+.locker:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .locker {
+        width: 30%; /* Ajusta a largura em tablets */
+        height: 30%; /* Ajusta a altura em tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .locker-wrapper {
+        padding: 0 1rem; /* Reduz o padding em dispositivos móveis */
+    }
+
+    .locker {
+        width: 45%; /* Ajusta a largura em dispositivos móveis */
+        height: 45%; /* Ajusta a altura em dispositivos móveis */
+        font-size: 1.2rem; /* Reduz o tamanho da fonte */
+    }
+}

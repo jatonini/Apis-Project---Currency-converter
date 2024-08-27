@@ -1,0 +1,9 @@
+API DE CLIMA --> 
+
+
+https://openweathermap.org/ --> CHECAR CLIMA
+
+https://unsplash.com/developers --> PEgar imagem mais proxima da cidade
+
+
+https://flagsapi.com/ --> PEgar as bandeiras dos paises
